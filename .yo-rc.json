@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Drupal 8 + PHPUnit = ❤",
+    "packageVersion": "0.0.0",
+    "useSass": true,
+    "deployToGithubPages": true,
+    "githubUsername": "zviryatko",
+    "githubRepository": "drupal-8-love-phpunit"
+  }
+}
