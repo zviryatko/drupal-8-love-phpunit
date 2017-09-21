@@ -1,0 +1,21 @@
+<h3>Git Hook</h3>
+
+<p class="fragment">Put it to <code>.git/hooks/pre-push</code> or <code>pre-commit</code></p>
+
+<div class="fragment">
+    <pre><code class="bash">#!/usr/bin/php
+&lt;?php
+printf("%sGit pre-commit hook %1\$s", PHP_EOL);
+$projectName = basename(getcwd());
+exec('phpunit -c core/phpunit.xml modules/custom', $output, $retCode);
+if ($retCode !== 0) {
+    $minimalTestSummary = array_pop($output);
+    printf("Test suite for %s failed: ", $projectName);
+    printf("( %s ) %s%2\$s", $minimalTestSummary, PHP_EOL);
+    return false; // exit(1);
+}
+printf("All tests for %s passed.%s%2\$s", $projectName, PHP_EOL);
+return true; // exit(0);</code></pre>
+</div>
+
+<p class="fragment"><em>* script approved by <span class="cyan">Sebastien Bergmann</span><sup><small><a target="_blank" href="https://gist.github.com/raphaelstolt/588697">[1]</a></small></sup></em></p>

@@ -1,0 +1,34 @@
+<h3><strike>Browser & Javascript</strike> Functional Tests</h3>
+
+<p class="fragment">
+    <code class="cyan">\Drupal\Tests\BrowserTestBase</code>
+    <code class="cyan">\Drupal\...\JavascriptTestBase</code>
+</p>
+
+<p class="fragment">
+    <code class="magenta">\Drupal\Tests\ban\...\IpAddressBlockingTest</code>
+    <code class="magenta">\Drupal\Tests\toolbar\...\ToolbarIntegrationTest</code>
+</p>
+
+<table>
+    <thead>
+    <tr class="fragment">
+        <th class="green">Pros</th>
+        <th class="red">Cons</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="fragment green">Verify that the system works as experienced by the user</td>
+        <td class="fragment red">Very slow execution. <br>Heavy system setup</td>
+    </tr>
+    <tr>
+        <td class="fragment green">Verify that the system works when code is refactored</td>
+        <td class="fragment red">
+            <nobr>Hard to locate origins of bugs.</nobr>
+            <nobr>Prone to random test fails.</nobr>
+            <nobr>Hard to change</nobr>
+        </td>
+    </tr>
+    </tbody>
+</table>
