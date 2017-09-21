@@ -1,0 +1,21 @@
+<h2>Dummy run</h2>
+
+<div class="fragment">
+    <h6 class="text-left">Most common way:</h6>
+    <pre><code class="bash">$ phpunit -c web/core/phpunit.xml --group=simple_block
+PHPUnit 4.8.36 by Sebastian Bergmann and contributors.
+..
+Time: 27.51 seconds, Memory: 184.00MB
+OK (2 tests, 5 assertions)</code></pre>
+</div>
+
+<p class="fragment">Pay attention to &quot;<code>group</code>&quot; parameter</p>
+
+<div class="fragment">
+    <p>Drupal searching for test's comment</p>
+    <pre class="fragment"><code class="php">/**
+ * @group simple_block
+ */</code></pre>
+</div>
+
+<p class="fragment"><em>* don't put this comment to abstract class</em></p>

@@ -1,0 +1,24 @@
+<h2>The Simple Block</h2>
+
+<div class="fragment">
+    <pre><code class="php">class SimpleBlock extends BlockBase {
+  public function build() {
+    if (\Drupal::currentUser()->isAnonymous()) {
+      return (Link::createFromRoute(
+        $this->t('Sign in'),
+        'user.login')
+      )->toRenderable();
+    }
+    else {
+      return [
+        '#markup' => $this->t('Hello, %username!', [
+          '%username' => \Drupal::currentUser()->getDisplayName(),
+        ]),
+      ];
+    }
+  }
+}</code></pre>
+</div>
+
+<br>
+<p class="fragment"><em>* and don't forget about CacheContext</em></p>

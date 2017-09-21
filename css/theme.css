@@ -324,3 +324,7 @@ img.profile-picture {
 
 .green {
   color: #859900; }
+
+h6.text-left {
+  text-align: left;
+  padding-left: 5%; }

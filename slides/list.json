@@ -8,5 +8,10 @@
     "intro/the-talk.html",
     "intro/why-we-need-it.html",
     "intro/perfect-world.html",
-    "intro/how-it-helps.html"
+    "intro/how-it-helps.html",
+    "setup/installation.html",
+    "setup/set-up.html",
+    "setup/the-first-test-part-1.html",
+    "setup/the-first-test-part-2.html",
+    "setup/dummy-run.html"
 ]

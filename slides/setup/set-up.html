@@ -1,0 +1,21 @@
+<h2>Set up</h2>
+
+<div class="fragment">
+    <h6 class="text-left">Copy dist config file:</h6>
+    <pre><code class="bash">$ cp core/phpunit.xml.dist core/phpunit.xml</code></pre>
+</div>
+<div class="fragment">
+    <h6 class="text-left">Edit and add your environment variables: </h6>
+    <pre><code>$ vim core/phpunit.xml
+&lt;env name="SIMPLETEST_BASE_URL" value="mysql://root@localhost/d8"/&gt;
+&lt;env name="SIMPLETEST_DB" value="http://d8.dev"/&gt;</code></pre>
+</div>
+<div class="fragment">
+    <h6 class="text-left">Or run through command line: </h6>
+    <pre><code class="bash">$ export SIMPLETEST_DB=mysql://root@localhost/d8
+$ export SIMPLETEST_BASE_URL=http://d8.dev</code></pre>
+</div>
+<div class="fragment">
+    <h6 class="text-left">Run: </h6>
+    <pre><code class="bash">$ phpunit -c core/phpunit.xml --group=user --testsuite=unit</code></pre>
+</div>
