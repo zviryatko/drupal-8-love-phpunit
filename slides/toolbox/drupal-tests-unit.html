@@ -1,0 +1,28 @@
+<h3>Unit Tests</h3>
+
+<p class="fragment">Base: <code class="cyan">\Drupal\Tests\UnitTestCase</code></p>
+
+<p class="fragment">Ex.: <code class="magenta">\Drupal\Tests\Component\Uuid\UuidTest</code></p>
+
+<table>
+    <thead>
+    <tr class="fragment">
+        <th class="green">Pros</th>
+        <th class="red">Cons</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="fragment green">Verify individual parts</td>
+        <td class="fragment red">Rewrite on every refactoring</td>
+    </tr>
+    <tr>
+        <td class="fragment green">Quickly find problems in code. Fast execution</td>
+        <td class="fragment red">Complicated mocking</td>
+    </tr>
+    <tr>
+        <td class="fragment green">No system setup for the test run</td>
+        <td class="fragment red">No guarantee that the whole system actually works</td>
+    </tr>
+    </tbody>
+</table>

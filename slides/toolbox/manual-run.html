@@ -1,0 +1,24 @@
+<h3>Manual run</h3>
+
+<h4 class="fragment">This part is easiest</h4>
+
+<div class="fragment"><pre><code>$ phpunit -c core/phpunit.xml --group user --testsuite unit
+Time: 2.93 seconds, Memory: 96.00MB
+OK (68 tests, 171 assertions)</code></pre>
+</div>
+<div class="fragment"><pre><code>$ phpunit -c core/phpunit.xml --group user --testsuite kernel
+Time: 1.95 minutes, Memory: 58.00MB
+OK, but incomplete, skipped, or risky tests!
+Tests: 41, Assertions: 383, Skipped: 9.
+</code></pre>
+</div>
+<div class="fragment"><pre><code>$ phpunit -c core/phpunit.xml --group user --testsuite functional
+Time: 6.94 minutes, Memory: 52.00MB
+OK (45 tests, 587 assertions)</code></pre>
+</div>
+
+<p class="fragment">
+    <span class="red">3 seconds</span> vs <span class="red">2 minutes</span> vs <span class="red">7 minutes</span>
+</p>
+
+<h4 class="fragment">But we still need all type of tests!</h4>

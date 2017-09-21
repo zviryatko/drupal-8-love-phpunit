@@ -13,5 +13,14 @@
     "setup/set-up.html",
     "setup/the-first-test-part-1.html",
     "setup/the-first-test-part-2.html",
-    "setup/dummy-run.html"
+    "setup/dummy-run.html",
+    "toolbox/hard-part-start.html",
+    "toolbox/what-the-tests.html",
+    "toolbox/drupal-tests.html",
+    "toolbox/drupal-tests-unit.html",
+    "toolbox/drupal-tests-kernel.html",
+    "toolbox/drupal-tests-browser.html",
+    "toolbox/the-problem.html",
+    "toolbox/the-solution.html",
+    "toolbox/manual-run.html"
 ]
