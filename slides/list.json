@@ -22,5 +22,12 @@
     "toolbox/drupal-tests-browser.html",
     "toolbox/the-problem.html",
     "toolbox/the-solution.html",
-    "toolbox/manual-run.html"
+    "toolbox/manual-run.html",
+    "automatization/automatization-intro.html",
+    "automatization/git-hooks.html",
+    "automatization/phpci.html",
+    "automatization/travis.html",
+    "automatization/gitlab.html",
+    "automatization/jenkins.html",
+    "coverage/fun-part-start.html"
 ]

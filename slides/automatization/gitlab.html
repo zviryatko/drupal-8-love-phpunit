@@ -1,0 +1,13 @@
+<h3>GitLab</h3>
+
+<h4><a href="https://about.gitlab.com/">https://about.gitlab.com/</a></h4>
+
+<p><img src="resources/img/gitlab.png" width="20%" alt="GitLab"></p>
+
+<div class="fragment">
+    <p>Config file: <code class="magenta">.gitlab-ci.yml</code></p>
+    <pre><code class="yml">test:php7:mysql:
+  image: php:7
+  script:
+  - vendor/bin/phpunit -c core/phpunit.xml modules/custom</code></pre>
+</div>
