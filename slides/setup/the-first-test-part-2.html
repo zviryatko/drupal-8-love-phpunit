@@ -1,3 +1,24 @@
-<h2>The First test - Part 2</h2>
+<h2>The Simple Block <span class="red">Test</span></h2>
 
-<p>Please change me!</p>
+<div class="fragment">
+    <pre><code>/** @group simple_block */
+class SimpleBlockTest extends BrowserTestBase {
+  public static $modules = ['block', 'simple_block'];
+
+  public function testAnonymous() {
+    $this->drupalGet('');
+    $link = Link::createFromRoute('Sign in', 'user.login')->toString();
+    $this->assertSession()->responseContains($link);
+  }
+
+  public function testLoggedIn() {
+    $this->drupalLogin($this->user);
+    $this->drupalGet('');
+    $this->assertSession()->pageTextContains(strtr('Hello, %user!', [
+      '%user' => $this->user->getDisplayName(),
+    ]));
+  }</code></pre>
+</div>
+
+<br>
+<p class="fragment"><em>* some useful code was skipped</em></p>
