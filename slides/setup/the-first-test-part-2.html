@@ -7,12 +7,12 @@ class SimpleBlockTest extends BrowserTestBase {
 
   public function testAnonymous() {
     $this->drupalGet('');
-    $link = Link::createFromRoute('Sign in', 'user.login')->toString();
-    $this->assertSession()->responseContains($link);
+    $l = Link::createFromRoute('Sign in', 'user.login')->toString();
+    $this->assertSession()->responseContains($l);
   }
 
   public function testLoggedIn() {
-    $this->drupalLogin($this->user);
+    $this->drupalLogin($this->drupalCreateUser([], 'John Doe'));
     $this->drupalGet('');
     $this->assertSession()->pageTextContains(strtr('Hello, %user!', [
       '%user' => $this->user->getDisplayName(),
@@ -20,5 +20,5 @@ class SimpleBlockTest extends BrowserTestBase {
   }</code></pre>
 </div>
 
-<br>
-<p class="fragment"><em>* some useful code was skipped</em></p>
+<p class="fragment"><em>* place block on <code>setup</code> method</em></p>
+<p class="fragment"><em>* also you prefer to test the cache</em></p>
