@@ -29,5 +29,8 @@
     "automatization/travis.html",
     "automatization/gitlab.html",
     "automatization/jenkins.html",
+    "coverage/reports.html",
+    "coverage/coverage.html",
+    "coverage/coveralls.html",
     "coverage/fun-part-start.html"
 ]
